@@ -15,12 +15,22 @@ $grey_color: #758095;
     color: $color;
 }
 body{ 
+    position: relative;
     width: 100%;
     height: 100vh;
     background:url("../img/background.jpg");
     background-size: cover;
     background-position: center;
     @include flexElement(center, center);
+    flex-wrap: wrap;
+}
+
+.version{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    @include text(12px, black);
 }
 .container{ 
     display: flex;
@@ -89,6 +99,8 @@ body{
         background-color: #FFF;
         &_upperBlock{
             margin-top: 20px;
+            margin-bottom: 20px;
+        
             width: 80%;
             margin-left: 10%;
             @include flexElement(space-between, center);
@@ -113,11 +125,151 @@ body{
             }
 
         }
+        &_notes{ 
+            width: 100%;
+            
+            &_time{ 
+                width: 100%;
+                @include flexElement(space-around, center);
+                &_text{
+                    margin-left: 20px;
+                    @include text(16px, $grey_color);
+                }
+                hr{ 
+                    opacity: 0.7;
+                    width: 90%;
+                    height: 1px;
+                    background-color: $grey_color;
+                }
+            }
+        }
+        &_note{ 
+            position: relative;
+            width: 80%;
+            margin: 10px auto;
+            padding: 4%;
+            &_time{
+                margin-bottom: 5px;
+                @include text(12px, $grey_color);
+            }
+            &_text{ 
+                @include text(16px, $prime_color) 
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4px;
+                height: 100%;
+                background: #8576ED;
+            }
+        }
+        &_main{
+            height: 70%;
+            
+        }
+        .note{
+            &_purple{ 
+                background: rgba(133, 118, 237, 0.15);
+                &::before{
+                    background: #8576ED;
+                }
+            }
+            &_blue{
+                background: rgba(61, 131, 249, 0.15);
+                &::before{
+                    background: #3D83F9;
+                }
+            }
+            &_orange{
+                background: rgba(238, 165, 124, 0.15);
+                &::before{ 
+                    background: #EEA57C;
+                }
+            }
+
+        }
+        &_footer{ 
+            border-top: 2px solid $prime_color;
+            padding: 4%;
+            &_input{
+                &_text{ 
+                    width: 60%;
+                    height: 60px;
+                    margin: 0 20%;
+                    display: block;
+                    border:2px solid $prime_color;
+                }
+                &_time{ 
+                    width: 20%;
+                    margin: 20px 20%;
+                    border:2px solid $prime_color;
+                }
+            }
+            &_btn{
+                border-radius: 13px;
+                border:none;
+                background-color: $prime_color;
+                width: 20%;
+                height: 30px;
+                @include text(14px, white);
+            }
+        }
     }
     &_calendar{ 
         width: 30%;
         background: rgba(42, 46, 65, 0.7);
         backdrop-filter: blur(5px);
-
+        @include flexElement(center, flex-start);
+        &_wrapper{
+            width: 90%;
+           
+        }
+        &_month{
+            width: 50%;
+            margin: 5% auto;
+            @include flexElement(space-between, center);
+            &_btn{
+                cursor: pointer;
+                width:10px;
+                height: 20px;
+                border:none;
+                background:none;
+                &_svg{
+                    width:10px;
+                    height: 20px;
+                    fill: none;
+                }
+            }
+            &_text{ 
+                @include text(18px, white);
+            }
+        }
+        &_hr{
+            padding: 0;
+            margin: 20px 0;
+            width: 100%;
+            height: 4px;
+        }
+        &_data_row{ 
+            margin: 10px 5%;
+            width: 90%;
+            @include flexElement(space-between, center);
+            &_item{
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                @include flexElement(center,center);
+                p{
+                    @include text(14px, white);
+                    opacity: 0.8;
+                }
+                
+            }
+            .data_active{
+                background-color: #3D83F9;
+            }
+        }
     }
 }

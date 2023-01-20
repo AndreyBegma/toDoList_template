@@ -36,4 +36,14 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1 23H15V37H1V23Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M23 23H37V37H23V23Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="prev-calendar" viewBox="0 0 20 38">
+        <path d="M19 1L1 19L19 37" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="next-calendar" viewBox="0 0 20 38">
+        <path d="M1 1L19 19L1 37" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="hr-calendar" viewBox="0 0 599 4">
+        <path opacity="0.13" fill-rule="evenodd" clip-rule="evenodd" d="M0 2H599V4H0V2Z" fill="white"/>
+        <path opacity="0.17" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H599V2H0V0Z" fill="black"/>
+    </symbol>
 </svg>

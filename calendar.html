@@ -12,6 +12,8 @@
     <title>Document</title>
 </head>
 <body>
+   
+    <p class="version">version beta_0.1</p>
     <div class="container">
         <div class="container_menu">
            <p class="container_menu_title">menu</p>
@@ -66,8 +68,112 @@
                     </button>
                 </div>
             </div>
+            <div class="container_events_main">
+                <div class="container_events_note note_purple">
+                    <p class="container_events_note_time">9:00-10:00</p>
+                    <p class="container_events_note_text">
+                        Meet Sophia in airport
+                    </p>
+                </div>
+
+
+                <div class="container_events_note note_blue">
+                    <p class="container_events_note_time">11:00-13:00</p>
+                    <p class="container_events_note_text">
+                        Studio workshop
+                    </p>
+                </div>
+            
+                <div class="container_events_note note_orange">
+                    <p class="container_events_note_time">14:00-15:00</p>
+                    <p class="container_events_note_text">
+                        Design workshop with Johny Ive
+                    </p>
+                </div>
+            </div>
+            <div class="container_events_footer">
+                <textarea class="container_events_footer_input_text" type="text" placeholder="Write new text"></textarea>
+                <input  class="container_events_footer_input_time" type="time" >
+                <button class="container_events_footer_btn">Create</button>
+            </div>
         </div>
-        <div class="container_calendar"> calendar</div>
+        <div class="container_calendar">
+            <div class="container_calendar_wrapper">
+                <div class="container_calendar_month">
+                    <button class="container_calendar_month_btn">
+                        <svg class="container_calendar_month_btn_svg">
+                            <use xlink:href="./img/sprite.svg#prev-calendar"></use>
+                        </svg>
+                    </button>
+                    <p class="container_calendar_month_text">March 2022</p>
+                    <button class="container_calendar_month_btn">
+                        <svg class="container_calendar_month_btn_svg">
+                            <use xlink:href="./img/sprite.svg#next-calendar"></use>
+                        </svg>
+                    </button>
+                </div>
+                <svg class="container_calendar_hr">
+                    <use xlink:href="./img/sprite.svg#hr-calendar"></use>
+                </svg>
+                <div class="container_calendar_data_row">
+                    <div class="container_calendar_data_row_item"><p>M</p></div>
+                    <div class="container_calendar_data_row_item"><p>T</p></div>
+                    <div class="container_calendar_data_row_item"><p>W</p></div>
+                    <div class="container_calendar_data_row_item"><p>T</p></div>
+                    <div class="container_calendar_data_row_item"><p>F</p></div>
+                    <div class="container_calendar_data_row_item"><p>Sat</p></div>
+                    <div class="container_calendar_data_row_item"><p>Sun</p></div>
+                </div>
+                <div class="container_calendar_data_row">
+                    <div class="container_calendar_data_row_item"><p>1</p></div>
+                    <div class="container_calendar_data_row_item"><p>2</p></div>
+                    <div class="container_calendar_data_row_item"><p>3</p></div>
+                    <div class="container_calendar_data_row_item"><p>4</p></div>
+                    <div class="container_calendar_data_row_item"><p>5</p></div>
+                    <div class="container_calendar_data_row_item"><p>6</p></div>
+                    <div class="container_calendar_data_row_item"><p>7</p></div>
+                </div>
+                <div class="container_calendar_data_row">
+                    <div class="container_calendar_data_row_item"><p>8</p></div>
+                    <div class="container_calendar_data_row_item"><p>9</p></div>
+                    <div class="container_calendar_data_row_item"><p>10</p></div>
+                    <div class="container_calendar_data_row_item"><p>11</p></div>
+                    <div class="container_calendar_data_row_item"><p>12</p></div>
+                    <div class="container_calendar_data_row_item data_active"><p class="">13</p></div>
+                    <div class="container_calendar_data_row_item"><p>14</p></div>
+                </div>
+                <div class="container_calendar_data_row">
+                    <div class="container_calendar_data_row_item"><p>15</p></div>
+                    <div class="container_calendar_data_row_item"><p>16</p></div>
+                    <div class="container_calendar_data_row_item"><p>17</p></div>
+                    <div class="container_calendar_data_row_item"><p>18</p></div>
+                    <div class="container_calendar_data_row_item"><p>19</p></div>
+                    <div class="container_calendar_data_row_item"><p>20</p></div>
+                    <div class="container_calendar_data_row_item"><p>21</p></div>
+                </div>
+                <div class="container_calendar_data_row">
+                    <div class="container_calendar_data_row_item"><p>22</p></div>
+                    <div class="container_calendar_data_row_item"><p>23</p></div>
+                    <div class="container_calendar_data_row_item"><p>24</p></div>
+                    <div class="container_calendar_data_row_item"><p>25</p></div>
+                    <div class="container_calendar_data_row_item"><p>26</p></div>
+                    <div class="container_calendar_data_row_item"><p>27</p></div>
+                    <div class="container_calendar_data_row_item"><p>28</p></div>
+                </div>
+                <div class="container_calendar_data_row">
+                    <div class="container_calendar_data_row_item"><p>29</p></div>
+                    <div class="container_calendar_data_row_item"><p>30</p></div>
+                    <div class="container_calendar_data_row_item"><p>31</p></div>
+                    <div class="container_calendar_data_row_item"><p>-</p></div>
+                    <div class="container_calendar_data_row_item"><p>-</p></div>
+                    <div class="container_calendar_data_row_item"><p>-</p></div>
+                    <div class="container_calendar_data_row_item"><p>-</p></div>
+                </div>
+                <svg class="container_calendar_hr">
+                    <use xlink:href="./img/sprite.svg#hr-calendar"></use>
+                </svg>
+            </div>
+        </div>
     </div>
 </body>
 </html>
