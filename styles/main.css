@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  height: 80vh;
+}
+.container_menu {
+  width: 20%;
+  padding-left: 5%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+.container_menu_title {
+  margin-top: 30%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1A2D54;
+  text-transform: uppercase;
+}
+.container_menu_list {
+  margin-top: 50px;
+}
+.container_menu_list_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.container_menu_list_item_icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  margin-right: 20px;
+}
+.container_menu_list_item_link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #758095;
+}
+.container_menu_list_item .link_active {
+  transition-duration: 0.8s;
+  color: #758095;
+  text-decoration: underline #758095;
+}
+.container_menu_list_item .link_active::before {
+  transition-duration: 0.8s;
+  content: "";
+  position: absolute;
+  left: 0%;
+  width: 5px;
+  height: 20px;
+  background-color: #1A2D54;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container_menu_list_item .link_active:hover {
+  color: #1A2D54;
+  text-decoration: underline #1A2D54;
+}
+.container_menu_list_item .link_active:hover::before {
+  transition-duration: 0.8s;
+  width: 25px;
+}
+.container_events {
+  width: 50%;
+  background-color: #FFF;
+}
+.container_events_upperBlock {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_events_upperBlock_title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1A2D54;
+}
+.container_events_upperBlock_btns {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_events_upperBlock_btns_btn {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+}
+.container_events_upperBlock_btns_btn_icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+}
+.container_calendar {
+  width: 30%;
+  background: rgba(42, 46, 65, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+/*# sourceMappingURL=main.css.map */

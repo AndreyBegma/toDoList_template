@@ -1,0 +1,123 @@
+$prime_color:#1A2D54;
+$secondary_color:#1A2D54;
+$grey_color: #758095;
+@mixin flexElement($justify, $align){ 
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin text($fontSize, $color){
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fontSize;
+
+    color: $color;
+}
+body{ 
+    width: 100%;
+    height: 100vh;
+    background:url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    @include flexElement(center, center);
+}
+.container{ 
+    display: flex;
+    width:70%;
+    height: 80vh;
+    
+    &_menu{ 
+        width:20%;
+        padding-left: 5%;
+        position: relative;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(5px);
+        &_title{ 
+            margin-top: 30%;
+            @include text(18px, $secondary_color);
+            text-transform: uppercase;
+        }
+        &_list{ 
+           
+            margin-top: 50px;
+            &_item{
+                
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                &_icon{ 
+                    width: 20px;
+                    height: 20px;
+                    fill: none;
+                    margin-right: 20px;
+                }
+                &_link{ 
+                   
+                    text-decoration: none;
+                    @include text(16px, $grey_color);
+                }
+                .link_active{
+                    transition-duration: 0.8s;
+                    color: $grey_color;
+                    text-decoration:underline $grey_color;
+                    &::before{
+                        transition-duration: 0.8s;
+                        content: '';
+                        position: absolute;
+                        left: 0%;
+                        width: 5px;
+                        height: 20px;
+                        background-color: $prime_color;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                    &:hover{
+                        color: $prime_color;
+                        text-decoration:underline $prime_color;
+                        &::before{
+                            transition-duration: 0.8s;
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_events{
+        width: 50%;
+        background-color: #FFF;
+        &_upperBlock{
+            margin-top: 20px;
+            width: 80%;
+            margin-left: 10%;
+            @include flexElement(space-between, center);
+            &_title{ 
+                @include text(18px, $prime_color);
+            }
+            &_btns{ 
+                width: 15%;
+                @include flexElement(space-between, center);
+                &_btn{
+                    cursor:pointer;
+                    width:20px;
+                    height: 20px;
+                    border:none;
+                    background: none;
+                    &_icon{
+                        width: 20px;
+                        height: 20px;
+                        fill: none;
+                    }
+                }
+            }
+
+        }
+    }
+    &_calendar{ 
+        width: 30%;
+        background: rgba(42, 46, 65, 0.7);
+        backdrop-filter: blur(5px);
+
+    }
+}

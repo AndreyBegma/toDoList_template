@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="calendar" viewBox="0 0 30 30">
+        <path d="M27.249 14L29 15L15 23L1 15L2.75 14" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27.255 20.003L29 21L15 29L1 21L2.75 20" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9L15 1L29 9L15 17L1 9Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="saved-messages" viewBox="0 0 30 29">
+        <path d="M4 7V1H10L13 4H26V7" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 28H4L1 11H29L26 28Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="events" viewBox="0 0 32 32">
+        <path d="M9 17L13 21L23 11" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="chat" viewBox="0 0 32 32">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 23.1111C29.7 20.7778 31 17.6667 31 14.3333C31 6.77778 24.3 1 16 1C7.7 1 1 6.77778 1 14.3333C1 21.8889 7.7 28 16 28C17.5 28 18.9 27.7778 20.2 27.4444L28 31L27.5 23.1111Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="settings" viewBox="0 0 32 32">
+        <path d="M5 15V1" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 31V27" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 4V1" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 31V16" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 27C7.20914 27 9 25.2091 9 23C9 20.7909 7.20914 19 5 19C2.79086 19 1 20.7909 1 23C1 25.2091 2.79086 27 5 27Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27 15V1" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27 31V27" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 27C29.2091 27 31 25.2091 31 23C31 20.7909 29.2091 19 27 19C24.7909 19 23 20.7909 23 23C23 25.2091 24.7909 27 27 27Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16C18.2091 16 20 14.2091 20 12C20 9.79086 18.2091 8 16 8C13.7909 8 12 9.79086 12 12C12 14.2091 13.7909 16 16 16Z" stroke="#758095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="search" viewBox="0 0 39 39">
+        <path d="M38 38L27 27" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="change-view" viewBox="0 0 38 38">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H15V15H1V1Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M23 1H37V15H23V1Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 23H15V37H1V23Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M23 23H37V37H23V23Z" stroke="#8998B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+</svg>
