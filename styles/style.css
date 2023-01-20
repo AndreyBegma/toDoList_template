@@ -1,0 +1,149 @@
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.authBlock {
+  width: 35%;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+}
+.authBlock_title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  color: #1A2D54;
+  text-align: center;
+}
+.authBlock_btns {
+  margin: 20px 25%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authBlock_btns_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 48%;
+  height: 30px;
+  border: 2px solid #1A2D54;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  color: #1A2D54;
+  border-radius: 13px;
+  text-align: center;
+}
+.authBlock_btns_btn_active {
+  background: #1A2D54;
+  color: white;
+}
+.authBlock_form {
+  width: 60%;
+  margin: 30px 20%;
+}
+.authBlock_form_input {
+  padding-left: 10px;
+  transition-duration: 0.2s;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 40px;
+  border: 2px solid #1A2D54;
+  border-radius: 13px;
+  background: none;
+}
+.authBlock_form_input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1A2D54;
+}
+.authBlock_form_input:focus {
+  transition-duration: 0.5s;
+  outline: none;
+  background: #1A2D54;
+  color: #fff;
+}
+.authBlock_form_input:focus::placeholder {
+  color: white;
+}
+.authBlock_form_additionalsBtns {
+  width: 60%;
+  margin: 10px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authBlock_form_additionalsBtns label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #1A2D54;
+}
+.authBlock_form_additionalsBtns label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1A2D54;
+  border-radius: 2px;
+}
+.authBlock_form_additionalsBtns label:active::before {
+  background-color: #1A2D54;
+}
+.authBlock_form_additionalsBtns p a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #1A2D54;
+}
+.authBlock_mainBtn {
+  cursor: pointer;
+  width: 40%;
+  height: 30px;
+  margin: 40px 30%;
+  border: none;
+  border-radius: 10px;
+  background-color: #1A2D54;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  color: #1A2D54;
+  color: white;
+}
+.authBlock_version {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  color: #1A2D54;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

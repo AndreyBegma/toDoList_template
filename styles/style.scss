@@ -1,0 +1,129 @@
+$prime_color:#1A2D54;
+@mixin flexElement($justify, $align){ 
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin text($fontSize){
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fontSize;
+    
+
+    color: #1A2D54;
+}
+body{ 
+    height: 100vh;
+}
+.container{ 
+    @include flexElement(center,center);
+    width: 100%;
+    height: 100%;
+    background:url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.authBlock{ 
+    width: 35%;
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    &_title{ 
+        @include text(21px);
+        text-align: center;
+    }
+    &_btns{ 
+        margin: 20px 25%; 
+        width: 50%;
+        @include flexElement(space-between,center);
+        &_btn{
+            @include flexElement(center,center);
+            cursor: pointer;
+            width: 48%;
+            height: 30px;
+            border: 2px solid $prime_color;
+            @include text(21px);
+            border-radius: 13px;
+            text-align: center;
+            &_active{
+                background:$prime_color;
+                color:white;
+            }
+        }
+    }
+    &_form{
+        width: 60%;
+        margin: 30px 20%;
+        &_input{ 
+            padding-left: 10px;
+            transition-duration: 0.2s;
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 40px;
+            border: 2px solid $prime_color;
+            border-radius: 13px;
+            background: none;
+            &::placeholder{
+                @include text(16px)
+            }
+            &:focus{ 
+                transition-duration: 0.5s;
+                outline: none;
+                background:$prime_color;
+                color:#fff;
+                &::placeholder{
+                    color:white;
+                }
+            }
+        }
+        &_additionalsBtns{ 
+            width: 60%;
+            margin: 10px 20%;
+            @include flexElement(space-between,center);
+            label{ 
+                cursor: pointer;
+                position: relative;
+                padding-left: 20px;
+                @include text(12px);
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -1px;
+                    left: 0;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid $prime_color;
+                    border-radius: 2px;
+                }
+                &:active{ 
+                    &::before{
+                        background-color: $prime_color;
+                    }
+                }
+            }
+            p{
+
+                a{
+                    @include text(12px);
+                }
+            }
+        }
+    }
+    &_mainBtn{
+        cursor: pointer;
+        width: 40%;
+        height: 30px;
+        margin: 40px 30%;
+        border:none;
+        border-radius:10px;
+        background-color: $prime_color;
+        @include text(21px);
+        color: white;
+    }
+    &_version{
+        @include text(10px);
+        text-align:center;
+    }
+}
